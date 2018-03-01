@@ -250,7 +250,7 @@ RCT_EXPORT_METHOD(setAccessToken:(NSString *)accessToken)
 RCT_EXPORT_METHOD(getAccessToken:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
     NSString *accessToken = MGLAccountManager.accessToken;
-
+    
     if (accessToken != nil) {
         resolve(accessToken);
         return;
