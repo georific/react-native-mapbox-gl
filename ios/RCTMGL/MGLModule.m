@@ -255,7 +255,7 @@ RCT_EXPORT_METHOD(getAccessToken:(RCTPromiseResolveBlock)resolve rejecter:(RCTPr
         resolve(accessToken);
         return;
     }
-    
+
     reject(@"missing_access_token", @"No access token has been set", nil);
 }
 
